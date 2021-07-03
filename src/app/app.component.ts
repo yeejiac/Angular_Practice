@@ -43,4 +43,12 @@ export class AppComponent {
       ],
     });
   }
+
+  confirm() {
+    if (this.invalidForm.invalid) {
+      alert('表單漏填囉!');
+    } else {
+      alert('驗證成功');
+    }
+  }
 }
